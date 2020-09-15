@@ -1,0 +1,99 @@
+@import '~antd/dist/antd.less';
+
+#root {
+    overflow: hidden;
+}
+
+#logo {
+    background-color: #47a2ff;
+    padding: 4px 30px;
+    border-radius: 40px;
+    text-decoration: unset;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    -webkit-transition: .3s ease-in;
+    transition: .3s ease-in;
+}
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.symbol__area{
+    height: 90vh;
+    position: relative;
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        opacity: .88;
+        width: 376px;
+    }
+}
+
+
+.dp-inline-b{
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    color: #fff;
+    
+    h2 {
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    &:first-child {
+        border-right: 1px solid #fff;
+        padding: 0 80px 0 0;
+        text-align: right;
+    }
+
+    &:last-child {
+        padding-left: 80px;
+        text-align: left;
+    }
+
+    @media (max-width: 850px) {
+        display: block;
+        width: 100%;
+
+        &:first-child {
+            border-right: unset;
+            border-bottom: 1px solid #fff;
+            padding: 0;
+            padding-bottom: 14px;
+        }
+
+        &:last-child {
+            padding-top: 14px;
+            padding-left: 0;
+        }
+    }
+
+    p {
+        margin: 0;
+        padding: 4px 0;
+    }
+}
+
+.ant-layout {
+    background-color: #000;
+    .ant-layout-content{
+        padding: 0 50px;
+        padding-bottom: 60px;
+        // background-color: #fff;
+        background-color: unset;
+        margin-top: 64px;
+        margin-bottom: 200px;
+    }
+}
+
+
+.ant-menu-horizontal {
+    border: unset;
+}

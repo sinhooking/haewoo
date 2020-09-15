@@ -1,0 +1,43 @@
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover{
+        color: unset;
+        border-bottom: unset;
+}
+.ant-menu-horizontal > .ant-menu-item, .ant-menu-horizontal > .ant-menu-submenu {
+    
+    border-bottom: unset;
+}
+
+.hambuger {
+    display: inline-block;
+    position: relative;
+    width: 48px;
+    height: 24px;
+    border-top: 2px solid #fff;
+    -webkit-transition: .3s ease-in;
+    transition: .3s ease-in;
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        right: 0;
+        top: 18px;
+        border-top: 2px solid #fff;
+        -webkit-transition: .3s ease-in;
+        transition: .3s ease-in;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 36px;
+        height: 24px;
+        right: 0;
+        top: 8px;
+        border-top: 2px solid #fff;
+        -webkit-transition: .3s ease-in;
+        transition: .3s ease-in;
+    }
+}

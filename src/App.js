@@ -1,24 +1,31 @@
+import { Layout } from 'antd';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.less';
+import FooterContent from './components/blocks/FooterContent';
+import SideMenu from './components/blocks/SideMenu';
+import Stars from './components/blocks/Stars';
+import DesignAndProject from './components/sections/DesignAndProject/DesignAndProject';
+import MainImg from './static/main_symbol.a9e76b9.png'
+const { Header, Content, Footer } = Layout;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Layout>
+        <Header style={{ position: 'fixed', zIndex: 1, width: '100%', background: 'unset', padding: '0', textAlign: 'center' }}>
+          <SideMenu />
+        </Header>
+        <Content className="site-layout">
+          <Stars />
+          <div className="symbol__area">
+            <img src={MainImg} alt="main icon" />
+          </div>
+          <DesignAndProject />
+        </Content>
+        <Footer style={{ textAlign: 'center', backgroundColor: '#646464' }}>
+          <FooterContent />
+        </Footer>
+      </Layout>
     </div>
   );
 }
